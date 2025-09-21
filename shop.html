@@ -4,105 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Bioarchitettura®</title>
-    <style>
-        body {
-            font-family: 'Futuristic', sans-serif;
-            background-color: #0d0d0d;
-            color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 40px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo {
-            font-size: 2.5em;
-            font-weight: bold;
-            letter-spacing: 5px;
-        }
-
-        header nav a {
-            color: #f0f0f0;
-            text-decoration: none;
-            margin-left: 30px;
-            font-size: 1.2em;
-        }
-
-        .shop-main {
-            padding: 80px 0;
-        }
-
-        h1 {
-            font-size: 3em;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        p {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-        }
-
-        .product-item {
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .product-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .product-item img {
-            width: 100%;
-            border-radius: 6px;
-        }
-
-        .product-item h3 {
-            font-size: 1.5em;
-            margin: 15px 0 10px;
-        }
-
-        .buy-button {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 15px;
-            transition: background-color 0.3s ease;
-        }
-
-        .buy-button:hover {
-            background-color: #45a049;
-        }
-
-        footer {
-            text-align: center;
-            padding: 50px 0;
-            border-top: 1px solid #2a2a2a;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -115,39 +17,10 @@
             <a href="contatti.html">CONTATTI</a>
         </nav>
     </header>
-
-    <main class="container shop-main">
-        <h1>Il Nostro Catalogo</h1>
-        <p>Acquista abbonamenti, pubblicazioni e corsi per approfondire le tue conoscenze in bioarchitettura.</p>
-        
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="images/rivista-copertina.jpg" alt="Copertina rivista Bioarchitettura">
-                <h3>Abbonamento Annuo Rivista</h3>
-                <p>Ricevi 4 numeri della rivista direttamente a casa tua.</p>
-                <a href="#" class="buy-button">Acquista</a>
-            </div>
-            <div class="product-item">
-                <img src="images/ebook-specializzato.jpg" alt="Ebook specialistico">
-                <h3>Ebook: Materiali Sostenibili</h3>
-                <p>Una guida completa ai materiali innovativi e naturali per l'edilizia.</p>
-                <a href="#" class="buy-button">Acquista</a>
-            </div>
-            <div class="product-item">
-                <img src="images/libro-fondazione.jpg" alt="Libro della Fondazione">
-                <h3>Libro della Fondazione</h3>
-                <p>Una raccolta dei migliori progetti e ricerche della Fondazione.</p>
-                <a href="#" class="buy-button">Acquista</a>
-            </div>
-            <div class="product-item">
-                <img src="images/corso-master.jpg" alt="Immagine corso master">
-                <h3>Master Online Bioarchitettura</h3>
-                <p>Corso di alta formazione certificato per architetti e professionisti.</p>
-                <a href="#" class="buy-button">Acquista</a>
-            </div>
-        </div>
+    <main>
+        <h1>Shop</h1>
+        <p>Scopri i nostri prodotti e servizi dedicati alla bioarchitettura.</p>
     </main>
-    
     <footer>
         <p>&copy; 2025 Bioarchitettura®. Tutti i diritti riservati.</p>
     </footer>

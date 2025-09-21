@@ -3,229 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bioarchitettura® | The Future of Architecture</title>
-    <style>
-        @font-face {
-            font-family: 'Futuristic';
-            src: url('fonts/Futuristic.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Futuristic', sans-serif;
-            background-color: #0d0d0d;
-            color: #f0f0f0;
-            overflow-x: hidden;
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        header {
-            padding: 40px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .logo {
-            font-size: 2.5em;
-            font-weight: bold;
-            letter-spacing: 5px;
-        }
-
-        header nav a {
-            color: #f0f0f0;
-            text-decoration: none;
-            margin-left: 30px;
-            font-size: 1.2em;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero h1 {
-            font-size: 4em;
-            margin: 0;
-            line-height: 1;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            max-width: 600px;
-        }
-
-        .gallery {
-            padding: 100px 0;
-            position: relative;
-        }
-
-        .gallery h2 {
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 50px;
-        }
-
-        .picasso-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .picasso-item {
-            position: relative;
-            overflow: hidden;
-            border: 2px solid #2a2a2a;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .picasso-item:nth-child(even) {
-            transform: rotate(3deg);
-        }
-
-        .picasso-item:nth-child(odd) {
-            transform: rotate(-3deg);
-        }
-
-        .picasso-item:hover {
-            transform: scale(1.05) rotate(0deg);
-        }
-
-        .picasso-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            filter: grayscale(100%);
-            transition: filter 0.5s ease-in-out;
-        }
-        
-        .picasso-item:hover img {
-            filter: grayscale(0%);
-        }
-
-        .content-section {
-            padding: 80px 0;
-        }
-
-        .content-section h2 {
-            font-size: 2.5em;
-            border-bottom: 2px solid #5a5a5a;
-            padding-bottom: 10px;
-        }
-
-        .news-item, .activity-item {
-            border-bottom: 1px solid #2a2a2a;
-            padding: 20px 0;
-        }
-        .news-item:last-child, .activity-item:last-child {
-            border-bottom: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 50px 0;
-            border-top: 1px solid #2a2a2a;
-        }
-    </style>
+    <title>Bioarchitettura® | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="container">
-    <div class="logo">BIOARCHITETTURA®</div>
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="shop.html">SHOP</a>
-        <a href="formazione.html">FORMAZIONE</a>
-        <a href="news.html">NEWS</a>
-        <a href="contatti.html">CONTATTI</a>
-    </nav>
-</header>
-
-<main>
-    <section class="hero">
-        <div class="container">
-            <h1>L'Architettura del Futuro</h1>
-            <p>Esploriamo nuove frontiere del design, dove la tradizione incontra l'innovazione per ridefinire gli spazi abitativi.</p>
-        </div>
-    </section>
-
-    <section class="gallery">
-        <div class="container">
-            <h2>Progetti</h2>
-            <div class="picasso-grid">
-                <div class="picasso-item"><img src="images/futuristic-building-1.jpg" alt="Edificio moderno con forme astratte."></div>
-                <div class="picasso-item"><img src="images/futuristic-building-2.jpg" alt="Interno di un'abitazione con giochi di luce."></div>
-                <div class="picasso-item"><img src="images/futuristic-building-3.jpg" alt="Costruzione urbana integrata con la natura."></div>
-                <div class="picasso-item"><img src="images/futuristic-building-4.jpg" alt="Struttura in vetro e acciaio con linee dinamiche."></div>
-                <div class="picasso-item"><img src="images/futuristic-building-5.jpg" alt="Modellino architettonico in stile cubista."></div>
-                <div class="picasso-item"><img src="images/futuristic-building-6.jpg" alt="Vista aerea di un complesso abitativo ecologico."></div>
-                <div class="picasso-item"><img src="images/futuristic-building-7.jpg" alt="Dettaglio di un materiale bio-costruttivo."></div>
-                <div class="picasso-item"><img src="images/futuristic-building-8.jpg" alt="Rendering di un progetto di riqualificazione urbana."></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="rivista" class="content-section container">
-        <h2>Rivista</h2>
-        <p>Da 30 anni, la prima rivista italiana di architettura ecologica. Leggi articoli di approfondimento e saggi sulle ultime tendenze del design bioclimatico.</p>
-    </section>
-
-    <section id="shop" class="content-section container">
-        <h2>Shop</h2>
-        <p>Acquista i nostri prodotti esclusivi, dai modelli di design ai manuali tecnici. La nostra selezione è pensata per ispirare professionisti e appassionati. Visita il nostro e-commerce per abbonamenti, libri e molto altro.</p>
-    </section>
-
-    <section id="formazione" class="content-section container">
-        <h2>Formazione</h2>
-        <p>Iscriviti ai nostri corsi e master, accreditati e tenuti da docenti esperti. Specializzati in bioarchitettura e sostenibilità ambientale con i nostri percorsi di alta formazione.</p>
-    </section>
-
-    <section id="news" class="content-section container">
-        <h2>News & Attività</h2>
-        <div class="news-item">
-            <h3>Nuovo Protocollo di Sostenibilità</h3>
-            <p>La Fondazione ha pubblicato un nuovo protocollo per l'architettura sostenibile, frutto di anni di ricerca e collaborazione internazionale.</p>
-            <p><small>15 Settembre 2025</small></p>
-        </div>
-        <div class="news-item">
-            <h3>Workshop su Materiali Naturali</h3>
-            <p>Partecipa al nostro workshop per scoprire l'uso innovativo di materiali come il sughero e la canapa in edilizia.</p>
-            <p><small>10 Settembre 2025</small></p>
-        </div>
-    </section>
-
-    <section id="contatti" class="content-section container">
-        <h2>Contatti & Fondazione</h2>
-        <p>Rimani connesso con la nostra visione. La Fondazione Italiana per la Bioarchitettura® promuove la ricerca e lo sviluppo di un'architettura rispettosa dell'ambiente.</p>
-        <p>Email: <a href="mailto:info@bioarchitettura-fondazione.eu" style="color:#f0f0f0;">info@bioarchitettura-fondazione.eu</a></p>
-        <p>Telefono: <a href="tel:+390471973097" style="color:#f0f0f0;">+39 0471 973097</a></p>
-    </section>
-</main>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2025 Fondazione Italiana per la Bioarchitettura®</p>
-        <p>Powered by The Future</p>
-    </div>
-</footer>
-
+    <header>
+        <div class="logo">BIOARCHITETTURA®</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="formazione.html">FORMAZIONE</a>
+            <a href="news.html">NEWS</a>
+            <a href="contatti.html">CONTATTI</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Benvenuti su Bioarchitettura®</h1>
+        <p>Innovazione, sostenibilità e architettura responsabile.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bioarchitettura®. Tutti i diritti riservati.</p>
+    </footer>
 </body>
 </html>
